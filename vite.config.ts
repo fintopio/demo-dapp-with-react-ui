@@ -8,8 +8,7 @@ export default defineConfig({
   build: {
     outDir: 'docs'
   },
-  // @ts-ignore
-  base: process.env.GH_PAGES ? '/demo-dapp-with-react-ui/' : './',
+  base: process.env.VITE_GH_PAGES ? '/demo-dapp-with-react-ui/' : '/',
   server: {
     fs: {
       allow: ['../sdk', './'],
